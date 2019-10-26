@@ -1,8 +1,18 @@
+main :: IO ()
 main = do
+    -- {{{ 入力
+
     r <- readLn -- 入力が一行に一文字の場合
     -- [a, b] <- map read . words <$> getLine -- 一行に入力が複数ある場合
-    -- putStrLn $ show $ solve a b -- showの返り値がString型の場合
+
+    -- }}}
+
+    -- {{{ Solver
+
+    -- putStrLn $ show $ solve a b -- solveの返り値がString型の場合
     -- putStrLn $ solve a b
+
+    -- }}}
 
     putStrLn $ show $ solve r -- showの返り値がString型の場合
 
